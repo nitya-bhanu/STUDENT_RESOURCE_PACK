@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1111;
+    color: #682AE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    margin-top: 4vh;
+    margin-right: 88vw;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar{
+    width: 20vw;
+    height: 80vh;
+    margin-right: 10vw;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    background-color: honeydew;
+    margin:9vh 2vw;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.sidebar ul li a{
+    margin:0 1vw;
+    text-decoration: none;
+}
+
+.middle{
+    width: 20vw;
+    height: 67vh;
+    background-color: #682AE9;
+    margin-right: 10vw;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle ul{
+    list-style: none;
+}
+
+.middle li{
+    background-color: honeydew;
+    margin:8vh 2vw;
+    height: 5vh;
+    border-radius: 12px;
+    padding: 1vh 1vw;
+    display: none;
+    align-items: center;
+}
+
+.middle ul li a{
+    text-decoration: none;
+}
+
+.middle ul li img{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-top: 16vh;
+}
+
+.right .glasses{
+    width: 30vw;
+    height: 30vh;
+    background-image: url(https://pngimg.com/uploads/sunglasses/sunglasses_PNG155.png);
+    background-size:100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.right .glasses .tip{
+    margin: 0 5vw;
+    width: 7vw;
+}
+
+.right .qoute{
+    background-color: black;
+    color: green;
+    height: 20vh;
+    width:30vw;
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.right img{
+    margin:0 1vw;
+    height: 10vh;
+}
+
+.back{
+    margin-top: 45vh;
+    transform: rotateZ(90deg);
+}
+
+.back button{
+    width: 10vw;
+    height: 4vh;
+    border-radius: 16px;
+    border-style: none;
+    background-color: black;
+}
+
+.back button a{
+    text-decoration: none; 
+    color: green;
+}
