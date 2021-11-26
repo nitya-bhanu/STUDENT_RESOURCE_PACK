@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1111;
+    color: #682AE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot-topics{
+    display: flex;
+    justify-content: center;
+    margin:10vh 0;
+}
+
+.hot-topics .sticky{
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+.sticky.dsa{
+    background-image: url("note1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.light.dsa{
+    position: absolute;
+    z-index: -1;
+    width: 10vw;
+    height: 20vh;
+    margin-right: 0vw;
+    background-color:#FCB03C;
+    animation: breathe 5s linear infinite;
+}
+
+.sticky.web{
+    background-image: url("note2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.light.web{
+    position: absolute;
+    z-index: -1;
+    width: 10vw;
+    height: 20vh;
+    margin-right: 40vw;
+    background-color:#7AAADB;
+    animation: breathe 5s linear infinite;
+}
+
+.sticky.app{
+    background-image: url("note4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.light.app{
+    position: absolute;
+    z-index: -1;
+    width: 10vw;
+    height: 20vh;
+    margin-right: 80vw;
+    background-color:#BAD646;
+    animation: breathe 5s linear infinite;
+}
+
+.sticky.ai{
+    background-image: url("note3.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.light.ai{
+    position: absolute;
+    z-index: -1;
+    width: 10vw;
+    height: 20vh;
+    margin-right: -40vw;
+    background-color:#7BD1E8;
+    animation: breathe 5s linear infinite;
+}
+
+.sticky.ml{
+    background-image: url("note5.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.light.ml{
+    position: absolute;
+    z-index: -1;
+    width: 10vw;
+    height: 20vh;
+    margin-right: -80vw;
+    background-color:#F068A7;
+    animation: breathe 5s linear infinite;
+}
+
+@keyframes breathe {
+    0% {
+        filter: brightness(0%) blur(14px);
+    }
+
+    50% {
+        filter: brightness(100%) blur(14px);
+
+    }
+
+    100% {
+        filter: brightness(0%) blur(14px);
+    }
+}
+
+.extra{
+    width: 30vw;
+    height: 40vh;
+    margin-right: 55vw;
+    background-color: black;
+    color: green;
+    padding: 2vh 2vw;
+}
+
+.extra h1{
+    margin:2vh 0 3vh 0;
+}
+
+.extra ul{
+    list-style: none;
+}
+
+.extra ul li a{
+    text-decoration: none;
+    color:green;
+}
+
+
+
