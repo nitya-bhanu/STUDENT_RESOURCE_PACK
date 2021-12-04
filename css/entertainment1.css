@@ -1,0 +1,509 @@
+/*desiging the common body structure*/
+body {
+    background-color: rgb(1, 1, 29);
+    color: chartreuse;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 50vh;
+}
+
+body a {
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 28px;
+    transition-duration: 0.5s;
+}
+
+body a:hover {
+    color: yellowgreen;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*designing the centre main tags*/
+.mid_heading_circles {
+    /* display: flex;
+      flex-direction: row; */
+    font-size: 10px;
+}
+
+/*designing the heading tags*/
+.animes {
+    width: 14vw;
+    height: 28vh;
+    background-image: linear-gradient(315deg, #040675 0%, #031152 74%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 18vh;
+    margin-left: 22vw;
+    position: relative;
+    z-index: 1;
+}
+
+.movies {
+    width: 14vw;
+    height: 28vh;
+    background-image: linear-gradient(315deg, #040675 0%, #031152 74%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -28vh;
+    margin-left: 32vw;
+}
+
+.web_series {
+    width: 14vw;
+    height: 28vh;
+    background-image: linear-gradient(315deg, #040675 0%, #031152 74%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -28vh;
+    margin-left: 55vw;
+}
+
+.games_and_softwares {
+    width: 14vw;
+    height: 28vh;
+    background-image: linear-gradient(315deg, #040675 0%, #031152 74%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -28vh;
+    margin-left: 64vw;
+    position: relative;
+    z-index: 1;
+}
+
+.main_starting_circle {
+    position: fixed;
+    width: 18vw;
+    height: 36vh;
+    background-image: linear-gradient(315deg, #040675 0%, #031152 74%);
+    margin-left: 41%;
+    margin-top: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*designing the scrolling down stuff*/
+.scroll_down_stuff {
+    display: flex;
+}
+
+.scroll_anime {
+    background-image: url("luffy_banner.png");
+    background-size: 240px 240px;
+    width: 260px;
+    height: 260px;
+    margin-left: 40px;
+    background-repeat: no-repeat;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+.scroll_movies {
+    background-image: url("leonardo.png");
+    background-size: 240px 240px;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 250px;
+    margin-left: 280px;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+.scroll_web_series {
+    background-image: url("thomas_shelby.png");
+    background-size: 150px 250px;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 250px;
+    margin-left: 67vw;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+.scroll_games_and_resources {
+    background-repeat: no-repeat;
+    background-image: url("jett.gif");
+    background-size: 240px 240px;
+    width: 240px;
+    height: 250px;
+    margin-left: 81vw;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+/*scrolling animation class*/
+.scroll_animation_1 {
+    animation-name: scroll_bitch_down_1;
+    animation-duration: 800ms;
+}
+
+.scroll_animation_2 {
+    animation-name: scroll_bitch_down_2;
+    animation-duration: 800ms;
+}
+
+.scroll_animation_3 {
+    animation-name: scroll_bitch_down_3;
+    animation-duration: 800ms;
+}
+
+
+/*show content boxes animation classes*/
+.show_content_box_1_2{
+    animation-name:scroll_content1and2;
+    animation-duration: 800ms;
+}
+.show_content_box_3_4{
+    animation-name:scroll_content3and4;
+    animation-duration: 800ms;
+}
+
+/*button positioning*/
+.scroll_anime button {
+    margin-top: 240px;
+    margin-left: 70px;
+    width: 70px;
+    height: 35px;
+    position: relative;
+    z-index: 0;
+}
+
+.scroll_movies button {
+    margin-top: 70px;
+    margin-left: 30px;
+    width: 70px;
+    height: 35px;
+}
+
+.scroll_web_series button {
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 70px;
+    height: 35px;
+}
+
+.scroll_games_and_resources button {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 70px;
+    height: 35px;
+}
+
+.anime_btn{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: azure;
+    border-radius: 5px;
+    color: azure; 
+    background: linear-gradient(320deg, red 60%,blue  60%); 
+    position: static;
+    z-index: 10;
+  }
+  .movie_btn{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: azure;
+    border-radius: 5px;
+    color: azure;
+    background: linear-gradient(320deg, rgb(163, 163, 163) 60%,black  60%);
+  }
+  .web_btn{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: azure;
+    border-radius: 5px;
+    color: azure;
+    background: linear-gradient(320deg, rgb(163, 163, 163) 60%,black  60%);
+  }
+  .game_btn{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: azure;
+    border-radius: 5px;
+    color: azure;
+    background: linear-gradient(320deg, red 60%,blue  60%);
+  }
+  
+
+
+
+/*keyframes for different tabs*/
+@keyframes scroll_bitch_down_1 {
+    from {
+        opacity: 0;
+        margin-top: -200px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes scroll_bitch_down_2 {
+    from {
+        opacity: 0.5;
+        transform: scaleY(0);
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scroll_bitch_down_3 {
+    from {
+        opacity: 0;
+        margin-top: 100px;
+    }
+
+    to {
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
+/*keyframes for showing the content boxes*/
+@keyframes scroll_content1and2{
+    from {
+        opacity: 0;
+        margin-left: 400px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 900px;
+    }
+}
+@keyframes scroll_content3and4{
+    from {
+        opacity: 0;
+        margin-left:500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+/*designing the click here content*/
+.anime_content {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(17, 0, 58);
+    margin-left: 900px;
+    margin-top: -200px;
+    border-radius: 2%;
+    display: none;
+}
+
+.movie_content {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(17, 0, 58);
+    margin-left: 900px;
+    margin-top: -200px;
+    border-radius: 2%;
+    display: none;
+}
+
+.webseries_content {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(17, 0, 58);
+    margin-left: 100px;
+    margin-top: -200px;
+    border-radius: 2%;
+    display: none;
+}
+
+.games_content {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(17, 0, 58);
+    margin-left: 100px;
+    margin-top: -200px;
+    border-radius: 2%;
+    display: none;
+}
+
+/**************locomotive****************/
+
+.section {
+    margin: 50vh 0;
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+}
+
+html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.has-scroll-smooth body {
+    overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+    min-height: 100vh;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+.c-scrollbar:hover {
+    transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1);
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+    transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0;
+}
+
+
+
+/*styling inner contents of content box*/
+.inner_anime_content{
+    display: flex;
+    flex-direction: column;
+}
+.inner_movie_content{
+    display: flex;
+    flex-direction: column;
+}
+.inner_webseries_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 30px;
+    color: #bd07b4;
+    margin-left: 10px;
+}
+.inner_games_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    font-size: 30px;
+    color: #bd07b4;
+    margin-left: 10px;
+}
+.inner_software_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #bd07b4;
+}
+.inner_anime_content a{
+    margin-top: 33px;
+    margin-left: 30px;
+}
+.inner_movie_content a{
+    margin-top: 33px;
+    margin-left: 30px;
+}
+.inner_webseries_content a{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.inner_games_content a{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 28px;
+}
+.inner_software_content a{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 28px;
+}
