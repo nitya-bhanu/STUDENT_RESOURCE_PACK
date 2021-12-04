@@ -46,9 +46,9 @@ p {
 
 .box {
   padding: 10vh 2vw;
-  height: 42vh;
+  height: 39vh;
   flex-direction: column;
-  margin: 5vh 0;
+  margin: 4vh 0;
   overflow: scroll;
 }
 
@@ -79,6 +79,15 @@ p {
 }
 
 /**************About us**************/
+
+.discord{
+   font-size: 5vh;
+   margin-left: 1vw;
+}
+
+.discord img{
+  height: 3vh;
+}
 
 .profile {
   display: flex;
