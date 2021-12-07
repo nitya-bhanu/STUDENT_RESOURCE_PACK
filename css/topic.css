@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #0E1111;
+    color: #682AE9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 20vw;
+    height: 80vh;
+    margin: 8vh 8vw 0 2vw;
+    background-color: #682AE9;
+    border-radius: 12px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar li{
+    background-color: honeydew;
+    margin:9vh 2vw;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.sidebar ul li a{
+    margin:0 1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.middle{
+    width: 20vw;
+    height: 67vh;
+    margin-right: 8vw;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.middle ul{
+    list-style: none;
+}
+
+.middle li{
+    background-color: honeydew;
+    margin:8vh 2vw;
+    height: 5vh;
+    border-radius: 12px;
+    padding: 1vh 1vw;
+    display: none;
+    align-items: center;
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    0%   
+    {opacity: 0;
+        transform: translateX(-10px);}
+    100% 
+    {opacity: 1;}
+}
+
+.middle ul li a{
+    text-decoration: none;
+}
+
+.middle ul li img{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16vh;
+}
+
+.right h1{
+    padding: 0 3vw;
+}
+
+.right .qoute{
+    background-color: black;
+    color: green;
+    height: 30vh;
+    width: 30vw;
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.right img{
+    margin:0 1vw;
+    height: 10vh;
+}
+
+.back{
+    margin-top: 30vh;
+    transform: rotateZ(90deg);
+}
+
+.back button{
+    width: 10vw;
+    height: 4vh;
+    border-radius: 16px;
+    border-style: none;
+    background-color: black;
+}
+
+.back button a{
+    text-decoration: none; 
+    color: green;
+}
