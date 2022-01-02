@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+}
+.netflix_display,.amazon_display,.hotstar_display{
+    display: flex;
+}
+.display_info{
+    margin-left: 800px;
+}
