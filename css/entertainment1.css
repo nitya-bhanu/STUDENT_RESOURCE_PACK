@@ -500,3 +500,18 @@ html.has-scroll-dragging {
   margin-left: 1vw;
   font-size: 3.8vh;
 }
+
+
+
+/**************scroll instructions****************/
+.scroll_instructions{
+  display: flex;
+  width: 7.5vw;
+  height: 5vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.scroll2{
+  margin-left: .2vw;
+}
