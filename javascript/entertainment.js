@@ -21,8 +21,8 @@ function move_shit1() {
         setInterval(() => {
             if(x>60)
             {
-                btn.style.background= "linear-gradient(320deg, red "+x+"%,blue  60%)";
-                x--;  
+                btn.style.background= "linear-gradient(320deg, rgb(163, 163, 163) "+x+"%,black  60%)";
+                x--; 
             }
         }, 50);
     })
@@ -67,7 +67,7 @@ function move_shit2() {
             if(x>60)
             {
                 btn.style.background= "linear-gradient(320deg, rgb(163, 163, 163) "+x+"%,black  60%)";
-                x--;  
+                x--;
             }
         }, 50);
     })
@@ -156,8 +156,8 @@ function move_shit4() {
         setInterval(() => {
             if(x>60)
             {
-                btn.style.background= "linear-gradient(320deg, red "+x+"%,blue  60%)";
-                x--;  
+                btn.style.background= "linear-gradient(320deg, rgb(163, 163, 163) "+x+"%,black  60%)";
+                x--; 
             }
         }, 50);
     })
